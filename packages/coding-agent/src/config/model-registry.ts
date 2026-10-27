@@ -971,7 +971,7 @@ export class ModelRegistry {
 				keylessProviders.add(providerName);
 			}
 
-			if (providerConfig.discovery && (providerConfig.api || providerConfig.discovery.type === "proxy")) {
+			if (providerConfig.discovery) {
 				const disableStrictCompat = providerConfig.disableStrictTools ? { disableStrictTools: true } : undefined;
 				discoverableProviders.push({
 					provider: providerName,
